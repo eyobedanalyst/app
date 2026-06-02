@@ -14,14 +14,13 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Grant permission
-        run: chmod +x gradlew
+      - uses: gradle/actions/setup-gradle@v3
 
       - name: Build APK
-        run: ./gradlew assembleDebug
+        run: gradle assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug
+          name: APK
           path: app/build/outputs/apk/debug/*.apk
