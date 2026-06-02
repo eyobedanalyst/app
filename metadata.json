@@ -1,0 +1,6 @@
+{
+  "name": "SmartTutorial Ethiopia",
+  "description": "A modern, interactive Android educational app for Grade 11 & 12 Web Development. Designed in inspiration with SmartTutorial's teaching system, featuring real progress tracking, bookmark savings, and course showcases.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
